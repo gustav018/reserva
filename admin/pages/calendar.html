@@ -377,6 +377,7 @@ document.addEventListener("DOMContentLoaded", function() {
       eventsFromFirebase.push({
         title: `Nombre: ${data.nombre || 'N/A'}, Horario: ${data.horario}, Servicio: ${data.servicios || 'N/A'} , Contacto: ${data.numero_de_contacto || 'N/A'}`,
         start: `${data.fecha}T${data.horario}`,
+        url: 'https://www.google.com/',
         end: endDate.toISOString() 
       });
     });
