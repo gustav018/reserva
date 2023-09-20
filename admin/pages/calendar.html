@@ -345,7 +345,7 @@
     <script>
 document.addEventListener("DOMContentLoaded", function() {
 
-  // Referencia a la colección 'reservas' en Firebase Firestore
+ 
   var db = firebase.firestore().collection("reservas");
 
   // Inicializar FullCalendar
@@ -356,9 +356,9 @@ document.addEventListener("DOMContentLoaded", function() {
       center: 'title',
       right: 'dayGridMonth,timeGridWeek,timeGridDay'
     },
-    locale: 'es', // Configurar idioma a español
+    locale: 'es', 
     editable: true,
-    events: [], // Inicialmente vacío, se llenará con datos de Firebase
+    events: [], 
   });
 
   calendar.render();
